@@ -1,0 +1,32 @@
+### Index
+GET http://localhost:3000/records.json
+
+
+### Create
+POST http://localhost:3000/records.json
+Content-Type: application/json
+
+{
+  "album_title": "test-artist",
+  "artist": "test-album",
+  "price": 50
+}
+
+
+### Show
+GET http://localhost:3000/records/2.json
+
+
+
+### Update
+PATCH http://localhost:3000/records/4.json
+Content-Type: application/json
+
+{
+  "price": 25
+}
+
+
+
+### Destroy
+DELETE http://localhost:3000/records/4.json
